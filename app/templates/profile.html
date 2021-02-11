@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static', filename='app.css')}}">
+</head>
+
+{%extends 'base.html'%}
+{%block main%}
+<div id="header-info">
+    <img src="{{url_for('static', filename='profile_photo.jpg')}}"/>
+    <h1>Aaliyah Johnston</h1>
+    <h6>@ali_johnston</h6>
+    <h6>Kingston, Jamaica</h6>
+    <h6>{{date}}</h6>
+</div>
+
+<div>
+    <p>Welcome to my website. I am new to this but I am sure you will enjoy being here as much as i enjoyed bringing this content to you. See you in a few years when I can do this with ease. xoxo gossip girl.</p>
+</div>
+
+<div id="sections">
+    <section>
+        <div class="num">700</div>
+        <div class= "title">Posts</div>
+    </section>
+    <section>
+        <div class="num">100</div>
+        <div class="title">Following</div>
+    </section>
+    <section>
+        <div class="num">300</div>
+        <div class="title">Followers</div>
+    </section>
+</div>
+<div><button>Follow</button></div>
+
+{%endblock%}
+</html>
